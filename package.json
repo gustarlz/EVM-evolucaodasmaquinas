@@ -1,0 +1,33 @@
+{
+  "name": "evolucao-das-maquinas",
+  "version": "1.0.0",
+  "description": "beta test Evolução das Maquinas",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --windows",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "gustarlz",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^37.1.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.gustarlz.evolucaodasmasquinas",
+    "productName": "evolucao-das-maquinas",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "directories": {
+      "output": "build"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/**/*.map"
+    ]
+  }
+}
